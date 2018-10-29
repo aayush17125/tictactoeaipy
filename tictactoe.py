@@ -117,12 +117,13 @@ ______|_________|______
 			
 				
 	
-def takeNaiveMove():
+def takeProperMove():
 	""" Returns a tile number randomly from the set of unchecked tiles with uniform probability distribution.    
 	"""
 	move=random.randint(1,9) 
 	while validmove(move)==False:
 		move=random.randint(1,9)
+		print("Hi boi'z")
 	return move	
 
 
@@ -257,7 +258,7 @@ def game(gametype=1):
 		while win()==False and s1<9:
 			s1+=1
 			if a2.turn==a2.player1:
-				x=takeNaiveMove()
+				x=takeProperMove()
 				if x==1:
 					a2.tile1=1
 				if x==2:
@@ -280,7 +281,7 @@ def game(gametype=1):
 				
 				
 			elif a2.turn==a2.player2:
-				x=takeNaiveMove()
+				x=takeProperMove()
 				if x==1:
 					a2.tile1=2
 				if x==2:
@@ -307,7 +308,7 @@ def game(gametype=1):
 		while win()==False and s2<9 :
 			s2+=1
 			if a2.turn==a2.player1:
-				x=takeNaiveMove()
+				x=takeProperMove()
 				if x==1:
 					a2.tile1=1
 				if x==2:
