@@ -38,15 +38,15 @@ player2=2
 # 1 value indicates that the tile is ticked by player-1
 # 2 value indicates that the tile is ticked by player-2
 
-tile1= 0    
-tile2= 0
-tile3= 0
-tile4= 0
-tile5= 0
-tile6= 0
-tile7= 0
-tile8= 0
-tile9= 0
+tile1= 1    
+tile2= 1
+tile3= 1
+tile4= 1
+tile5= 1
+tile6= 1
+tile7= 1
+tile8= 1
+tile9= 1
 
 
 # turn variable defines whose turn is now
